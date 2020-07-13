@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     boolean Sipunto=false,error=false,estadoBotones=true;
 
-    int numero = 00;
+    int numero = 0;
 
     double NumA = 0, NumB = 0;
     char op;
@@ -399,6 +399,8 @@ try {
         error = false;
         pantalla1.setText("" + formato.format(NumA));
         pantalla2.setText("√" + texto + "=" + formato.format(NumA));
+
+       // pantalla2.setText();
     }
 }
 catch (NumberFormatException e){
