@@ -283,8 +283,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-            texto = "";
-            ActualizarNumero(1);
+            texto = "0";
+            ActualizarNumero (1);
             ActualizarNumero(2);
             error=false;
             numero=0;
