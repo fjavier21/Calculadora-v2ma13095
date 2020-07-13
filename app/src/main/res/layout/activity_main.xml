@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pantalla"
+        android:backgroundTint="#ABA9A9">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora-CARNET:MA13095"
+            android:textColor="#0B0A0A" />
+
+
+        <TableLayout
+            android:id="@+id/tabPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fondo"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pantalla2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:layout_weight="10"
+                    android:background="@color/pantalla"
+                    android:backgroundTint="#0C0C0C"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="#FDFDFD"
+                    android:textSize="50sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pantalla1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:layout_weight="10"
+
+                    android:background="@color/letra1"
+                    android:backgroundTint="#141313"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp" />
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <Button
+                    android:id="@+id/botfinalizarapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#C33333"
+                    android:enabled="true"
+                    android:onClick="off"
+                    android:text="OFF"
+                    android:textColor="#FDFDFC"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/botc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="borrar"
+                    android:text="C"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/botsigno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="Signo"
+                    android:text="±"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+
+
+                <Button
+                    android:id="@+id/botBorrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="borrar"
+                    android:text="CE"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+
+
+                <Button
+                    android:id="@+id/botdivision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="/"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <Button
+                    android:id="@+id/bot9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:onClick="tecla"
+                    android:text="9"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/botraiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:onClick="raiz"
+                    android:text="√"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/botpotencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="cuadrado"
+
+                    android:text="X²"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/botproducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="*"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/bot5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="5"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bot6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="6"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bot7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:onClick="tecla"
+                    android:text="7"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bot8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="8"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+
+                <Button
+                    android:id="@+id/botmenos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="-"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/bot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="1"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="2"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="3"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bot4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:enabled="true"
+                    android:onClick="tecla"
+                    android:text="4"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/botM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="operacion"
+                    android:text="+"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <Switch
+                    android:id="@+id/botblocq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:buttonTint="@color/letra2"
+                    android:drawableBottom="@color/colorPrimary"
+                    android:drawableTint="#121111"
+                    android:enabled="true"
+
+                    android:onClick="bloqueo"
+                    android:switchTextAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/letra1"
+                    android:textColorHint="#512E2E"
+                    android:textSize="36sp"
+                    android:thumbTint="#FF9800"
+                    android:track="@color/Fondobtn"
+                    android:trackTint="#BED3BF" />
+
+
+                //
+
+
+                <Button
+                    android:id="@+id/bot0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="@color/Fondobtn"
+                    android:onClick="tecla"
+                    android:text="0"
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/botpunto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:enabled="true"
+                    android:onClick="punto"
+                    android:text="."
+                    android:textColor="@color/letra1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/igual"
+
+                    android:layout_height="60sp"
+                    android:backgroundTint="#FF9800"
+                    android:enabled="true"
+                    android:onClick="Igual"
+                    android:text="="
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
