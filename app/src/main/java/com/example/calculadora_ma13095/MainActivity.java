@@ -398,6 +398,8 @@ try {
         ActualizarNumero(2);
         error = false;
         pantalla1.setText("" + formato.format(NumA));
+
+
         pantalla2.setText("√" + texto + "=" + formato.format(NumA));
 
        // pantalla2.setText();
